@@ -6,7 +6,7 @@ const WeatherCard = ({weatherdata}) => {
         <div className="flex flex-col items-center">
             <h3 className="text-3xl font-bold text-center p-5 ">{weatherdata.name}, {weatherdata.sys.country}</h3>
             <div className='flex items-center justify-around'>
-                <img src={`http://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`} alt={weatherdata.weather[0].description} className='h-16 w-16'/>
+                <img src={`https://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`} alt={weatherdata.weather[0].description} className='h-16 w-16'/>
                 <p className='text-3xl'>{Math.round(weatherdata.main.temp-273.15)} C</p>
             </div>
             <p className='text-center capitalize text-gray-400'>{weatherdata.weather[0].description}</p>
